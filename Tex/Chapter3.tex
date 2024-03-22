@@ -1,5 +1,5 @@
-\chapter{自适应噪声矫正调制识别网络}\label{chap:intro}
-\markboth{第三章\ \ 自适应噪声矫正调制识别网络}{}
+\chapter{窄带调制识别网络}\label{chap:intro}
+\markboth{第三章\ \ 窄带调制识别网络}{}
 % 第三章“自适应噪声矫正调制识别网络”的撰写思路可以分为以下几个关键部分：
 
 % 1. **引言和背景介绍**
@@ -425,15 +425,15 @@ Kappa系数定义为：
     \begin{tabular}{ccccccc}
     \hline
     \textbf{数据集}               & \textbf{模型}      & \textbf{OA} & \textbf{F1-score} & \textbf{Kappa} & \textbf{0-10dB准确率} & \textbf{参数量} \\ \hline
-    \multirow{2}{*}{RadioML 2016.10A} & CLDNN     & 0.5621 & 0.5721 & 0.5184 & 0.8219 & \textbf{0.09M} \\ \cline{2-7} 
+    \multirow{2}{*}{RadioML 2016.10A} & CLDNN\cite{sainath2015convolutional}     & 0.5621 & 0.5721 & 0.5184 & 0.8219 & \textbf{0.09M} \\ \cline{2-7} 
                                   & PROPOSED      & \textbf{0.6155} & \textbf{0.6412} & \textbf{0.5771} & \textbf{0.8988} & 0.21M \\ \hline
     \multirow{2}{*}{RadioML 2016.10B} & CLDNN     & 0.5846 & 0.5796 & 0.5385 & 0.8416 & \textbf{0.09M} \\ \cline{2-7} 
                                   & PROPOSED      & \textbf{0.6485} & \textbf{0.6500} & \textbf{0.6094} & \textbf{0.9292} & \textbf{0.21M} \\ \hline
-    \multirow{6}{*}{RadioML 2018.01A} & CNN       & 0.5820 & 0.5854 & 0.5639 & 0.7229 & 0.48M \\ \cline{2-7} 
+    \multirow{6}{*}{RadioML 2018.01A} & CNN\cite{o2016convolutional}       & 0.5820 & 0.5854 & 0.5639 & 0.7229 & 0.48M \\ \cline{2-7} 
                                   & CLDNN         & 0.5772 & 0.5755 & 0.5588 & 0.7213 & 1.32M \\ \cline{2-7} 
-                                  & ResNet        & 0.6211 & 0.6226 & 0.6047 & 0.8072 & 7.23M \\ \cline{2-7} 
-                                  & SENet         & 0.6327 & 0.6391 & 0.6168 & 0.8287 & 7.39M \\ \cline{2-7} 
-                                  & AWN           & 0.6262 & 0.6262 & 0.6099 & 0.8036 & 0.38M \\ \cline{2-7} 
+                                  & ResNet\cite{o2018over}        & 0.6211 & 0.6226 & 0.6047 & 0.8072 & 7.23M \\ \cline{2-7} 
+                                  & SENet\cite{zhang2023frequency}         & 0.6327 & 0.6391 & 0.6168 & 0.8287 & 7.39M \\ \cline{2-7} 
+                                  & AWN\cite{zhang2023towards}           & 0.6262 & 0.6262 & 0.6099 & 0.8036 & 0.38M \\ \cline{2-7} 
                                   & PROPOSED      & \textbf{0.6460} & \textbf{0.6480} & \textbf{0.6306}  & \textbf{0.8480} & \textbf{0.25M} \\ \hline
     \end{tabular}
     }
